@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+body{
+	font-family: 'Varela Round', sans-serif;
+	color: #121212;
+}
+header > .container{
+	text-align: center;
+	padding: 20px;
+}
+.body_box{
+	background-color: #E6E6E6;
+	text-align: center;
+	padding: 60px 0px 60px 0px;
+}
+.body_box span{
+	display: block;
+}
+.body_box #day {
+	font-size: 4em;
+}
+.body_box #date{
+	font-size: 2.5em;
+}
+.body_box #currency{
+	font-size: 1.5em;
+}
+.body_box form{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.body_box #tasa{
+	color: #450242;
+	font-size: 6em;
+	display: block;
+}
+.body_box #normas{
+	text-align: left;
+}
+#bancos{
+	padding: 60px 0px 60px 0px;
+	text-align: center;
+}
+#whatsapp{
+	color: #ffffff;
+	background-color: #00D942;
+	padding: 20px;
+	border-radius: 7px;
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 1.2em;
+}
+header > .container{
+	text-align: center;
+	padding: 20px;
+}
