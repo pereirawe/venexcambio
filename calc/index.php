@@ -1,6 +1,12 @@
+<?php
+    $rates = json_decode(file_get_contents('../json/rates.json'));
+    krsort($rates);
+    foreach ($rates as $rate) {
+        print_r($rate);
+    }
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +20,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </head>
 
+
+
 <body>
     <div class="container">
         <h1>Calculador de Cambios</h1>
@@ -22,13 +30,13 @@
                 <tr>
                     <th>Tasa interna</th>
                     <td>
-                        <input type="number" id="tasa_interna" name="tasa_interna" placeholder="Tasa Interna" value="45">
+                        <input type="number" id="tasa_interna" name="tasa_interna" placeholder="Tasa Interna" value="0.174">
                     </td>
                 </tr>
                 <tr>
                     <th>Tasa externa</th>
                     <td>
-                        <input type="number" id="tasa_externa" name="tasa_externa" placeholder="Tasa Externa" value="60">
+                        <input type="number" id="tasa_externa" name="tasa_externa" placeholder="Tasa Externa" value="0.180">
                     </td>
                 </tr>
                 <tr>
